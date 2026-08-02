@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- DEMO: remove noindex when site goes live -->
+<meta name="robots" content="noindex">
+<title>McDuffie's Tree Service | Palm &amp; Tree Care in Gibsonton, FL</title>
+<meta name="description" content="Palm pruning, tree trimming, tree removal, and dead-frond cleanup by a one-crew local operator. Text a photo, get a quote. Serving Gibsonton, Riverview &amp; South Hillsborough. Rated a perfect 5.0 stars across 121 reviews.">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="McDuffie's Tree Service | Gibsonton &amp; Riverview Tree Care">
+<meta property="og:description" content="Palm pruning, tree trimming, removal &amp; dead-frond cleanup. Text a photo, get a quote. Serving Gibsonton, Riverview &amp; South Hillsborough. A perfect 5.0 ★ across 121 reviews.">
+<meta property="og:url" content="https://wilsonramstead.github.io/mcduffies-tree-service/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1537395799810-9d64ef3d7227?w=1200&q=80&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="McDuffie's Tree Service | Gibsonton &amp; Riverview Tree Care">
+<meta name="twitter:description" content="Palm pruning, tree trimming, removal &amp; dead-frond cleanup. Text a photo, get a quote. Serving Gibsonton, Riverview &amp; South Hillsborough. A perfect 5.0 ★ across 121 reviews.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1537395799810-9d64ef3d7227?w=1200&q=80&auto=format&fit=crop">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --flannel:#A8322A;
+    --flannel-700:#872720;
+    --flannel-soft:#F1DAD4;
+    --timber:#4A3526;
+    --timber-700:#38271B;
+    --timber-500:#6E5137;
+    --cream:#F6EEDF;
+    --cream-2:#EDE1CB;
+    --paper:#FCF7EC;
+    --ink:#2C2118;
+    --ink-soft:#5A4A3A;
+    --moss:#5B6B3C;
+    --gold:#C08A2B;
+    --line:#E2D4BA;
+    --shadow:0 18px 44px -22px rgba(44,33,24,.5);
+    --shadow-sm:0 8px 22px -14px rgba(44,33,24,.42);
+    --radius:14px;
+    --wrap:1140px;
+  }
+  *{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Lato",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3{font-family:"Arvo",Georgia,serif;line-height:1.2;margin:0;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding-left:22px;padding-right:22px}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+    font-family:"Lato",sans-serif;font-weight:900;font-size:1rem;
+    text-decoration:none;border:0;cursor:pointer;
+    padding:14px 22px;border-radius:999px;line-height:1.1;
+    transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+    min-width:0;
+  }
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-call{background:var(--flannel);color:#fff;box-shadow:var(--shadow-sm)}
+  .btn-call:hover{background:var(--flannel-700);transform:translateY(-2px)}
+  .btn-text{background:var(--timber);color:#fff;box-shadow:var(--shadow-sm)}
+  .btn-text:hover{background:var(--timber-700);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--timber);border:2px solid var(--timber);padding:12px 20px}
+  .btn-ghost:hover{background:var(--timber);color:#fff}
+  .btn-lg{font-size:1.08rem;padding:16px 28px}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(252,247,236,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{
+    display:flex;align-items:center;gap:16px;
+    padding-top:12px;padding-bottom:12px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+  .brand .mark{
+    flex:none;width:42px;height:42px;border-radius:11px;
+    background:var(--flannel);color:#fff;
+    display:grid;place-items:center;box-shadow:var(--shadow-sm);
+  }
+  .brand .mark svg{width:24px;height:24px}
+  .brand .name{
+    font-family:"Arvo",serif;font-weight:700;font-size:1.12rem;color:var(--timber);
+    line-height:1.12;min-width:0;
+  }
+  .brand .name small{display:block;font-family:"Lato",sans-serif;font-weight:700;
+    font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--flannel)}
+  nav.desktop{margin-left:auto;display:flex;align-items:center;gap:26px}
+  nav.desktop a.lnk{text-decoration:none;font-weight:700;color:var(--ink-soft);font-size:.98rem}
+  nav.desktop a.lnk:hover{color:var(--flannel)}
+  .header-cta{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .header-cta .btn{padding:11px 18px}
+  @media(min-width:993px){.header-cta{margin-left:26px}}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;background:var(--timber-700)}
+  .hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+  .hero .scrim{position:absolute;inset:0;
+    background:linear-gradient(100deg,rgba(44,33,24,.9) 0%,rgba(44,33,24,.72) 42%,rgba(44,33,24,.25) 100%);}
+  .hero .inner{position:relative;padding-top:74px;padding-bottom:80px;max-width:640px}
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:9px;
+    background:rgba(246,238,223,.14);border:1px solid rgba(246,238,223,.3);
+    color:#F6EEDF;font-weight:700;font-size:.82rem;letter-spacing:.06em;
+    padding:7px 14px;border-radius:999px;margin-bottom:20px}
+  .hero h1{color:#fff;font-size:clamp(2.1rem,6vw,3.4rem);letter-spacing:-.01em}
+  .hero h1 em{color:#F2B7AC;font-style:normal}
+  .hero .lead{color:#F0E7D7;font-size:clamp(1.05rem,2.4vw,1.24rem);margin-top:18px;max-width:37ch}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:18px 26px;margin-top:30px;color:#EADFCB}
+  .hero .meta .item{display:flex;align-items:center;gap:9px;font-weight:700;font-size:.95rem;min-width:0}
+  .hero .meta svg{width:18px;height:18px;flex:none;color:var(--gold)}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:1.02rem}
+
+  /* ---------- Trust strip ---------- */
+  .trust{background:var(--flannel);color:#fff}
+  .trust .row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+    padding-top:22px;padding-bottom:22px;text-align:center}
+  .trust .cell{min-width:0}
+  .trust .big{font-family:"Arvo",serif;font-weight:700;font-size:1.5rem;line-height:1}
+  .trust .lbl{font-size:.82rem;letter-spacing:.05em;color:#FCE6E1;margin-top:6px}
+  @media(max-width:640px){
+    .trust .row{grid-template-columns:repeat(2,1fr);gap:22px 14px}
+  }
+
+  /* ---------- Sections ---------- */
+  section{scroll-margin-top:90px}
+  .band{padding-top:78px;padding-bottom:78px}
+  .head{max-width:620px;margin-bottom:40px}
+  .kicker{display:inline-block;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
+    font-size:.78rem;color:var(--flannel);margin-bottom:12px}
+  .head h2{font-size:clamp(1.7rem,4vw,2.5rem);color:var(--timber)}
+  .head p{margin-top:14px;color:var(--ink-soft);font-size:1.06rem}
+  .center{margin-left:auto;margin-right:auto;text-align:center}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--paper)}
+  .grid-svc{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;min-width:0;
+    transition:transform .18s ease,box-shadow .18s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .card .ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--cream-2)}
+  .card .ph img{width:100%;height:100%;object-fit:cover}
+  .card .body{padding:22px 22px 26px;min-width:0}
+  .card h3{font-size:1.24rem;color:var(--timber)}
+  .card p{margin-top:9px;color:var(--ink-soft);font-size:.98rem}
+  .card .tag{display:inline-block;margin-bottom:12px;font-weight:900;font-size:.72rem;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--flannel);
+    background:var(--flannel-soft);padding:5px 11px;border-radius:999px}
+  @media(max-width:680px){.grid-svc{grid-template-columns:1fr}}
+
+  /* ---------- How it works ---------- */
+  .how{background:var(--cream)}
+  .how-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+  .how-grid .art{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+    aspect-ratio:4/5;min-width:0}
+  .how-grid .art img{width:100%;height:100%;object-fit:cover}
+  .steps{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:20px}
+  .steps li{display:flex;gap:16px;min-width:0}
+  .steps .n{flex:none;width:40px;height:40px;border-radius:11px;background:var(--timber);
+    color:#fff;font-family:"Arvo",serif;font-weight:700;display:grid;place-items:center;font-size:1.1rem}
+  .steps h3{font-size:1.12rem;color:var(--timber)}
+  .steps p{margin-top:4px;color:var(--ink-soft);font-size:.98rem}
+  @media(max-width:820px){
+    .how-grid{grid-template-columns:1fr;gap:30px}
+    .how-grid .art{aspect-ratio:16/11;order:-1}
+  }
+
+  /* ---------- CTA band ---------- */
+  .cta{position:relative;overflow:hidden;background:var(--timber-700)}
+  .cta .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+  .cta .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(56,39,27,.82),rgba(74,53,38,.9))}
+  .cta .inner{position:relative;text-align:center;padding-top:72px;padding-bottom:72px;max-width:680px;
+    margin-left:auto;margin-right:auto}
+  .cta h2{color:#fff;font-size:clamp(1.7rem,4.4vw,2.5rem)}
+  .cta p{color:#EFE4D2;margin-top:14px;font-size:1.1rem}
+  .cta .cta-row{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;margin-top:28px}
+  .cta .btn-text{background:var(--cream);color:var(--timber-700)}
+  .cta .btn-text:hover{background:#fff}
+
+  /* ---------- Reviews ---------- */
+  .reviews{background:var(--paper)}
+  .grid-rev{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .quote{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 26px 26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;min-width:0}
+  .quote .stars{margin-bottom:14px}
+  .quote p{color:var(--ink);font-size:1.02rem;line-height:1.65}
+  .quote .who{margin-top:18px;font-weight:900;color:var(--timber);display:flex;align-items:center;gap:10px}
+  .quote .who .av{width:34px;height:34px;border-radius:50%;background:var(--flannel);color:#fff;
+    display:grid;place-items:center;font-family:"Arvo",serif;font-size:.95rem;flex:none}
+  .quote .who small{display:block;font-weight:700;color:var(--ink-soft);font-size:.8rem}
+  @media(max-width:860px){.grid-rev{grid-template-columns:1fr}}
+
+  /* ---------- Area / hours ---------- */
+  .area{background:var(--cream)}
+  .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .area-grid .col{min-width:0}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;
+    font-weight:700;color:var(--timber);font-size:.95rem}
+  .hours{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 26px;box-shadow:var(--shadow-sm)}
+  .hours h3{font-size:1.2rem;color:var(--timber);display:flex;align-items:center;gap:10px}
+  .hours h3 svg{width:20px;height:20px;color:var(--flannel)}
+  .hours .line{display:flex;justify-content:space-between;gap:14px;padding:11px 0;
+    border-bottom:1px solid var(--line);font-size:.98rem}
+  .hours .line:last-child{border-bottom:0}
+  .hours .day{color:var(--ink-soft);font-weight:700}
+  .hours .hr{font-weight:900;color:var(--timber)}
+  .hours .open{color:var(--moss);font-weight:900;font-size:.9rem}
+  .area .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  @media(max-width:820px){.area-grid{grid-template-columns:1fr;gap:30px}}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:var(--timber-700);color:#EADFCB}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;
+    padding-top:56px;padding-bottom:34px}
+  .foot .col{min-width:0}
+  .foot .brand-f{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+  .foot .brand-f .mark{flex:none;width:40px;height:40px;border-radius:10px;background:var(--flannel);
+    color:#fff;display:grid;place-items:center}
+  .foot .brand-f .mark svg{width:22px;height:22px}
+  .foot .brand-f b{font-family:"Arvo",serif;font-size:1.06rem;color:#fff;line-height:1.15}
+  .foot p{color:#CBB99C;font-size:.96rem}
+  .foot h4{font-family:"Arvo",serif;font-size:1rem;color:#fff;margin:0 0 14px}
+  .foot a{display:block;text-decoration:none;color:#EADFCB;padding:5px 0;font-size:.96rem}
+  .foot a:hover{color:#fff}
+  .foot .contact a{font-weight:700}
+  .legal{border-top:1px solid rgba(246,238,223,.16);padding-top:22px;padding-bottom:30px;
+    display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:space-between;align-items:center}
+  .legal p{color:#B7A488;font-size:.88rem}
+  .legal a{color:#F2B7AC;font-weight:700;text-decoration:none}
+  .legal a:hover{text-decoration:underline}
+  @media(max-width:760px){.foot{grid-template-columns:1fr;gap:26px}}
+
+  /* ---------- Mobile nav / header ---------- */
+  .menu-btn{display:none}
+  @media(max-width:992px){
+    nav.desktop{display:none}
+    .header-cta .btn .lbl-full{display:none}
+    .header-cta .btn{padding:11px 15px}
+  }
+  /* keep a call button visible down to 390px */
+  @media(max-width:560px){
+    .bar{gap:10px}
+    .brand .name{font-size:1rem;white-space:normal;overflow-wrap:break-word;word-break:normal}
+    .brand .mark{width:38px;height:38px}
+    .header-cta{gap:8px}
+    .header-cta .btn{padding:10px 13px;font-size:.92rem}
+  }
+  @media(max-width:400px){
+    .wrap{padding-left:16px;padding-right:16px}
+    .brand .name small{font-size:.62rem}
+    .header-cta .btn-text{display:none}
+  }
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .btn,.card{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="McDuffie's Tree Service home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M12 16c-3 0-5-2.2-5-5 0-.6.1-1.2.3-1.7C5.9 8.8 5 7.5 5 6c0-2 1.7-3.5 3.7-3.5.9 0 1.7.3 2.3.9C11.6 2.5 12.6 2 13.7 2 15.9 2 17.5 3.7 17.5 6c0 1.1-.5 2.1-1.2 2.8.4.7.7 1.6.7 2.5 0 2.6-2.2 4.7-5 4.7z"/></svg>
+      </span>
+      <span class="name">McDuffie's Tree Service<small>Gibsonton &middot; Riverview</small></span>
+    </a>
+    <nav class="desktop" aria-label="Primary">
+      <a class="lnk" href="#services">Services</a>
+      <a class="lnk" href="#how">Free Estimates</a>
+      <a class="lnk" href="#reviews">Reviews</a>
+      <a class="lnk" href="#area">Service Area</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-text" href="sms:+18139656341" aria-label="Text McDuffie's Tree Service">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span class="lbl-full">Text&nbsp;us</span>
+      </a>
+      <a class="btn btn-call" href="tel:+18139656341" aria-label="Call McDuffie's Tree Service at 813 965 6341">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+        <span class="lbl-full">Call&nbsp;</span>(813)&nbsp;965-6341
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Intro">
+    <img class="bg" src="https://images.unsplash.com/photo-1537395799810-9d64ef3d7227?w=1600&q=80&auto=format&fit=crop" alt="A tall Canary Island date palm towering over a South Florida yard" fetchpriority="high">
+    <div class="scrim"></div>
+    <div class="wrap inner">
+      <span class="eyebrow"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> A perfect 5.0 &middot; 121 Google reviews</span>
+      <h1>Palms and trees, <em>done right</em> &mdash; by one local crew.</h1>
+      <p class="lead">Palm pruning, trimming, removal, and dead-frond cleanup across South Hillsborough. Text a photo and get a straight answer on your yard.</p>
+      <div class="cta-row">
+        <a class="btn btn-call btn-lg" href="tel:+18139656341">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+          Call (813) 965-6341
+        </a>
+        <a class="btn btn-text btn-lg" href="sms:+18139656341">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text a photo
+        </a>
+      </div>
+      <div class="meta">
+        <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Serving Gibsonton, Riverview &amp; South Hillsborough</span>
+        <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open 7 days &middot; 7AM&ndash;5PM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust" aria-label="At a glance">
+    <div class="wrap row">
+      <div class="cell"><div class="big">5.0&#9733;</div><div class="lbl">Perfect Google rating</div></div>
+      <div class="cell"><div class="big">121</div><div class="lbl">Five-star reviews</div></div>
+      <div class="cell"><div class="big">7 days</div><div class="lbl">Open every week, 7&ndash;5</div></div>
+      <div class="cell"><div class="big">Free</div><div class="lbl">Estimates by text photo</div></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="band services">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="kicker">What we do</span>
+        <h2>Straightforward tree work for Florida yards</h2>
+        <p>One crew, the right tools, and a clean yard when we leave. Here's what neighbors call and text us for most.</p>
+      </div>
+      <div class="grid-svc">
+        <article class="card reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1565300897471-637af1e87c0d?w=800&q=75&auto=format&fit=crop" alt="Fan-palm fronds ready for a clean prune" loading="lazy"></div>
+          <div class="body">
+            <span class="tag">Palm pruning</span>
+            <h3>Palm pruning</h3>
+            <p>Skinned-up sabals, queens, and date palms shaped for a clean, healthy look &mdash; no over-hurricane-cutting.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1519567770579-c2fc5436bcf9?w=800&q=75&auto=format&fit=crop" alt="Looking up into a healthy shade-tree canopy" loading="lazy"></div>
+          <div class="body">
+            <span class="tag">Tree trimming</span>
+            <h3>Tree trimming</h3>
+            <p>Oaks and shade trees thinned and lifted so they look better, grow healthier, and clear your roofline.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1692229079936-f992ff4d4ac6?w=800&q=75&auto=format&fit=crop" alt="Trees being sectioned down during a removal" loading="lazy"></div>
+          <div class="body">
+            <span class="tag">Tree removal</span>
+            <h3>Tree removal</h3>
+            <p>Dead, leaning, or crowding trees taken down carefully &mdash; even the tight ones close to the house.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1615801124453-3a5139c4a273?w=800&q=75&auto=format&fit=crop" alt="Dried palm frond against the sky, ready for cleanup" loading="lazy"></div>
+          <div class="body">
+            <span class="tag">Cleanup</span>
+            <h3>Debris &amp; dead-frond cleanup</h3>
+            <p>Dropped fronds, storm debris, and dead wood hauled off so the yard's spotless when we pull out.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="band how">
+    <div class="wrap how-grid">
+      <div class="col reveal">
+        <span class="kicker">Free estimates</span>
+        <h2 style="font-size:clamp(1.7rem,4vw,2.4rem);color:var(--timber)">Text a photo, get a quote</h2>
+        <p style="margin-top:14px;color:var(--ink-soft);font-size:1.06rem">No waiting around for a sales visit. Snap a couple pictures of the palm or tree, send them over, and you'll get an honest price back.</p>
+        <ol class="steps">
+          <li>
+            <span class="n">1</span>
+            <div><h3>Text us a photo</h3><p>Send a picture or two of the tree, palm, or mess &mdash; the whole yard if it's easier.</p></div>
+          </li>
+          <li>
+            <span class="n">2</span>
+            <div><h3>Get a straight quote</h3><p>We look it over and text back a fair price. No pressure, no runaround.</p></div>
+          </li>
+          <li>
+            <span class="n">3</span>
+            <div><h3>We handle it &mdash; clean</h3><p>Pick a day that works, we do the work, and we haul off every scrap before we go.</p></div>
+          </li>
+        </ol>
+        <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px">
+          <a class="btn btn-text btn-lg" href="sms:+18139656341">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text (813) 965-6341
+          </a>
+          <a class="btn btn-ghost btn-lg" href="tel:+18139656341">Or call us</a>
+        </div>
+      </div>
+      <div class="art reveal">
+        <img src="https://images.unsplash.com/photo-1628354973088-ded60ff905bb?w=900&q=78&auto=format&fit=crop" alt="Coconut palm fronds seen from below against a bright sky" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta" aria-label="Get in touch">
+    <img class="bg" src="https://images.unsplash.com/photo-1537395799810-9d64ef3d7227?w=1400&q=70&auto=format&fit=crop" alt="" aria-hidden="true" loading="lazy">
+    <div class="scrim"></div>
+    <div class="wrap inner">
+      <h2>Got a palm or tree that needs attention?</h2>
+      <p>Call or text and get a real person who knows Florida trees. Free estimates, seven days a week.</p>
+      <div class="cta-row">
+        <a class="btn btn-call btn-lg" href="tel:+18139656341">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+          Call (813) 965-6341
+        </a>
+        <a class="btn btn-text btn-lg" href="sms:+18139656341">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text a photo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="band reviews">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="kicker">From the neighbors</span>
+        <h2>A perfect 5.0 across 121 reviews</h2>
+        <p>Real words from folks around South Hillsborough. Shawn does the work himself &mdash; and it shows.</p>
+      </div>
+      <div class="grid-rev">
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote><p>&ldquo;Shawn did an outstanding job trimming the overgrown tree in my front yard. He was professional, punctual, and very transparent throughout the entire process. His pricing was great, and the quality of his work exceeded my expectations!&rdquo;</p></blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">Z</span><span>Zach Courson<small>Google review</small></span></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote><p>&ldquo;We had two large palm trees and an oak tree trimmed in our front yard&hellip; very professional service with the trimming and the clean up. Reasonably priced.&rdquo;</p></blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">J</span><span>Jarred Posada<small>Google review</small></span></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote><p>&ldquo;Shawn was early, professional and personable. He kept me informed every step of the way. My palm trees look so much better and healthier now.&rdquo;</p></blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">G</span><span>Greg Richards<small>Google review</small></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREA / HOURS -->
+  <section id="area" class="band area">
+    <div class="wrap area-grid">
+      <div class="col reveal">
+        <span class="kicker">Where we work</span>
+        <h2 style="font-size:clamp(1.7rem,4vw,2.4rem);color:var(--timber)">Serving South Hillsborough</h2>
+        <p style="margin-top:14px;color:var(--ink-soft);font-size:1.06rem">Based in Gibsonton and working the surrounding towns. If you're nearby and not sure, just ask &mdash; text a photo and we'll let you know.</p>
+        <div class="chips">
+          <span class="chip">Gibsonton</span>
+          <span class="chip">Riverview</span>
+          <span class="chip">Apollo Beach</span>
+          <span class="chip">Ruskin</span>
+          <span class="chip">Sun City Center</span>
+          <span class="chip">South Hillsborough</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-call btn-lg" href="tel:+18139656341">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+            Call (813) 965-6341
+          </a>
+          <a class="btn btn-text btn-lg" href="sms:+18139656341">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text&nbsp;us
+          </a>
+        </div>
+      </div>
+      <div class="col reveal">
+        <div class="hours">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Hours</h3>
+          <div class="line"><span class="day">Monday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="day">Tuesday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="day">Wednesday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="day">Thursday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="day">Friday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="day">Saturday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="day">Sunday</span><span class="hr">7:00 AM &ndash; 5:00 PM</span></div>
+          <div class="line"><span class="open">Open 7 days a week</span><span class="open">Free estimates</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div class="col">
+      <div class="brand-f">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M12 16c-3 0-5-2.2-5-5 0-.6.1-1.2.3-1.7C5.9 8.8 5 7.5 5 6c0-2 1.7-3.5 3.7-3.5.9 0 1.7.3 2.3.9C11.6 2.5 12.6 2 13.7 2 15.9 2 17.5 3.7 17.5 6c0 1.1-.5 2.1-1.2 2.8.4.7.7 1.6.7 2.5 0 2.6-2.2 4.7-5 4.7z"/></svg>
+        </span>
+        <b>McDuffie's<br>Tree Service</b>
+      </div>
+      <p>A one-crew tree service serving Gibsonton, Riverview, and South Hillsborough &mdash; palms, trees, and a clean yard when we're done.</p>
+    </div>
+    <div class="col">
+      <h4>Services</h4>
+      <a href="#services">Palm pruning</a>
+      <a href="#services">Tree trimming</a>
+      <a href="#services">Tree removal</a>
+      <a href="#services">Debris &amp; frond cleanup</a>
+    </div>
+    <div class="col contact">
+      <h4>Get in touch</h4>
+      <a href="tel:+18139656341">Call (813) 965-6341</a>
+      <a href="sms:+18139656341">Text (813) 965-6341</a>
+      <a href="#area">Serving South Hillsborough</a>
+      <a href="#how">Free estimates by text</a>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <p>&copy; 2026 McDuffie's Tree Service &middot; Serving Gibsonton, Riverview &amp; South Hillsborough, FL</p>
+    <p>Website by <a href="https://wilsoninnovations.net" target="_blank" rel="noopener">Wilson Innovations</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"McDuffie's Tree Service",
+  "description":"Solo-operator tree service offering palm pruning, tree trimming, tree removal, and debris and dead-frond cleanup. Free estimates by text photo.",
+  "url":"https://wilsonramstead.github.io/mcduffies-tree-service/",
+  "telephone":"+18139656341",
+  "image":"https://images.unsplash.com/photo-1537395799810-9d64ef3d7227?w=1200&q=80&auto=format&fit=crop",
+  "priceRange":"$$",
+  "areaServed":["Gibsonton, FL","Riverview, FL","Apollo Beach, FL","Ruskin, FL","Sun City Center, FL","South Hillsborough County, FL"],
+  "address":{"@type":"PostalAddress","addressLocality":"Gibsonton","addressRegion":"FL","addressCountry":"US"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"121"},
+  "openingHoursSpecification":[{
+    "@type":"OpeningHoursSpecification",
+    "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens":"07:00","closes":"17:00"
+  }],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Palm pruning"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree trimming"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree removal"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Debris and dead-frond cleanup"}}
+  ]
+}
+</script>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e);});
+  })();
+</script>
+
+</body>
+</html>
